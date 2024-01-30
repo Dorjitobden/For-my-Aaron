@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Aaron, Please Be My Valentine?</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #ffccff; /* Light Pink */
+            color: #ff66b2; /* Pink */
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        #pochacco {
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        #buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff99cc; /* Lighter Pink */
+        }
+
+        #message {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Aaron,please be my Valentine?</h1>
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm0zc21kcjR1YzNyeGVjdWtvdGlmcTF1Yzdrc2p4bzl6enkyZHZyMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/U7VI2RFA6VcH2Gm7H9/giphy.gif" alt="Pochacco holding a heart" id="pochacco">
+    <p>Our First of Many?</p>
+    <div id="buttons">
+        <button class="button" onclick="showMessage('Yay!Be my forever Valentine')">Yes, absolutely!</button>
+        <button class="button" onclick="showMessage('Obviously ')">Yass</button>
+    </div>
+    <p id="message"></p>
+
+    <audio id="loverAudio" src="https://soundcloud.com/bananohleb/lover-taylor-swift?si=6d086a659b2b4fb199f098c4ced0b47b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"></audio>
+
+    <script>
+        function showMessage(message) {
+            document.getElementById("message").innerHTML = message;
+            playSong();
+        }
+
+        function playSong() {
+            var audio = document.getElementById('https://soundcloud.com/bananohleb/lover-taylor-swift?si=6d086a659b2b4fb199f098c4ced0b47b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
+
